@@ -1,0 +1,24 @@
+pt salvare
+
+local file1 = io.open("|D|text.txt", "w")  --> open text.txt in documents directory to write
+file1:write("somestring")                  --> write a string
+file1:close()                              --> close the file
+ 
+---
+ 
+local file2 = io.open("|D|text.txt", "r")  --> open text.txt in documents directory to read
+local str = file2:read("*all")             --> read whole file
+print(str)                                 --> print the contents
+file2:close()  
+
+
+structura salvare:
+fisier - daca nu exista - scrie unu cu prima linie = best score, linia2 = gogosi, liniile urmatoare toate costumele ce pot sa aiba 1(nu are) 2(are si nu-l poarta) sau 3(are si poarta)
+
+LA SHOP:
+-ascunde tot contentu
+-Adauga un grup ce contine toate costumele cu pretu sub ele si buton de buy pt fiecare. Swipe left si right pt a cumpara. Buton de back in colt :)
+
+for line in io.lines(filename) do 
+  print(line)
+end 
